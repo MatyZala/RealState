@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css';
+import HomePage from '../components/home';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -10,13 +10,12 @@ export async function getStaticProps({ locale }) {
   }
 }
 
-export default function Home(props) {
-const { t } = useTranslation();
-
+const Home = () => {
   return (
     <div className={styles.container}>
-      Real Estate
-      <h2>{t("home:rent")}</h2>
+      <HomePage />
     </div>
   )
 }
+
+export default Home
