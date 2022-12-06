@@ -1,1 +1,4 @@
-{"rent":"Para La Venta"}
+{
+    "rent": "Para Alquilar",
+    "sale": "Para La Venta"
+}
