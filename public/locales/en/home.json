@@ -1,1 +1,4 @@
-{"rent":"For sale"}
+{
+    "rent": "To Rent",
+    "sale": "For Sale "
+}
